@@ -7,6 +7,7 @@
     }
 
 
+    
 body {
     height: 100vh;
     background-color: darkslategray;
@@ -14,9 +15,12 @@ body {
     }
 
 h1 {
+    
     text-align:center;
     font-size: 225%;
     letter-spacing: 4px; 
+    width:100%;
+    margin: 0 auto;
 }
 
 section{
@@ -46,4 +50,23 @@ section{
     position: absolute;
     border-radius: 5px;
     background: yellow;
+}
+/* add mouse hover to cards*/
+
+div img:hover{
+    animation-name: card-zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards
+}
+
+/* creates the level of zoom for cards */
+
+@keyframes card-zoom {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.03);
+    }
+    
 }
