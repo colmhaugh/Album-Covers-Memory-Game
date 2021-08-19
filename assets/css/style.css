@@ -17,10 +17,30 @@ body {
 h1 {
     
     text-align:center;
-    font-size: 225%;
     letter-spacing: 4px; 
-    width:100%;
-    margin: 0 auto;
+    width:640px;
+}
+
+.button{
+        background-color: #4CAF50;
+        border: 2px solid #dcacb2;
+        border-radius: 12px;
+        color: #fff;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;        
+        display: inline-block;
+        font-size: 150%;
+        margin: auto;
+        /* margin: 4px 2px; */
+        transition-duration: 0.4s;
+        cursor: pointer;        
+ 
+}
+
+#div-button{
+    text-align: center;
+    width : 640px;
 }
 
 section{
