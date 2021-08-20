@@ -6,6 +6,7 @@
 
 const cards = document.querySelectorAll(".memory-card");
 
+/*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
 function flipCard(){
     this.classList.toggle('flip');
 }

@@ -55,6 +55,8 @@ section{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    /*add flip to the card*/
+    perspective: 1000px;
 }
 
 .memory-card{
@@ -63,6 +65,10 @@ section{
     height: calc(33.333% - 4px);
     margin: 2px;
     position: relative;
+
+    /*add 3d style flip*/
+    transform-style: preserve-3d;
+    transition: .5s;
     
     /* float: left;
     width: 24%;
@@ -75,6 +81,13 @@ section{
     height: calc(33.333% - 10px);*/    
     /* box-shadow: 1px 1px 1px 1px rgba(1, 0, 0, .3);
     box-sizing: border-box;   */
+}
+
+/*adding style for flip class that gets created when card is clicked
+try 360 deg*/
+
+.memory-card.flip{
+    transform: rotateY(180deg);
 }
 
 .front-face,
@@ -118,7 +131,6 @@ div img:hover{
     .memory-card{
         width: calc(33.3333% - 2px);
         height: calc(25% - 2px);
-        position: relative;
         margin: 1px;
         }
         
