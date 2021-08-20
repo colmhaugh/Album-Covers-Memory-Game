@@ -102,6 +102,15 @@ try 360 deg*/
     margin: auto;
     display: block;
 }
+
+/*to add mirror to images to be correct when filpped*/
+.back-face{
+    transform: scaleX(-1);
+}
+
+
+
+
 /* add mouse hover to cards*/
 
 div img:hover{
