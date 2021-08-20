@@ -7,7 +7,7 @@
     }
 
 
-    
+  /* Selecting height 100vh to use 100% of screen */  
 body {
     height: 100vh;
     display: flex;
