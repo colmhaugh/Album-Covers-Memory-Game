@@ -10,6 +10,8 @@
     
 body {
     height: 100vh;
+    display: flex;
+    /* width: 100%; */
     background-color: darkslategray;
 
     }
@@ -18,7 +20,7 @@ h1 {
     
     text-align:center;
     letter-spacing: 4px; 
-    width:640px;
+    width:auto;
 }
 
 .button{
@@ -40,7 +42,7 @@ h1 {
 
 #div-button{
     text-align: center;
-    width : 640px;
+    width : auto;
 }
 
 section{
@@ -56,11 +58,22 @@ section{
 }
 
 .memory-card{
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
+
+    width: calc(25% - 4px);
+    height: calc(33.333% - 4px);
     position: relative;
-    box-shadow: 1px 1px 1px 1px rgba(1, 0, 0, .3);
+    margin: 2px;
+    /* float: left;
+    width: 24%;
+    height: auto;
+    margin: 2px;
+    position: relative; */
+
+    /* padding: 5px; */
+    /* width: calc(25% - 10px); 
+    height: calc(33.333% - 10px);*/    
+    /* box-shadow: 1px 1px 1px 1px rgba(1, 0, 0, .3);
+    box-sizing: border-box;   */
 }
 
 .front-face, .back-space{
@@ -90,3 +103,30 @@ div img:hover{
     }
     
 }
+
+/* For medium to smaller screen size from 1200px wide*/
+
+
+@media screen and (max-width: 950px){
+  
+    /*change the ammount of cards in a row from 4 to 3*/
+    .memory-card{
+        width: calc(33.3333% - 2px);
+        height: calc(25% - 2px);
+        position: relative;
+        margin: 1px;
+        }
+        
+    }
+
+   /*  @media screen and (max-width: 350px){ */
+  
+        /*change the ammount of cards in a row from 4 to 3*/
+        /* .memory-card{
+            width: 30%;
+            }
+        
+            .memory-game{
+                width: 320px;
+            }
+        } */
