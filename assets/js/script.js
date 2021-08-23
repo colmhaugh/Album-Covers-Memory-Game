@@ -36,18 +36,27 @@ function checkForMatch(){
     if (firstCard.dataset.band === secondCard.dataset.band){        
         /*if the cards match then leave the cards faced up and remove the click option */
         disableCards();
+
+        /* Play clip from album */
+        playSound();
         return;
     }
     /*if the cards don't match then flip the cards back over again */
     unflipCards();
 }
 
+/* Function called when the cards matched.  It removed the event listener so the cards can't be selected again */
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
 }
 
+/* Function called when the cards dont match.  We remove the flip class that was added when they were selected.  Cards flip back after half a second */
 function unflipCards(){
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 500);
 
 }
 
