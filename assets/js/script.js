@@ -14,18 +14,36 @@ let firstCard, secondCard;
 function flipCard(){
     /* this.classList.toggle('flip'); */
 
-
     this.classList.add('flip');
-/* click a card, if the card wasn't selected already then it will become the first card flipped */
+        /* click a card, if it is the first card turned it will become the first card flipped */
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
         return;
     }
+        /* when the first card is flipped and the player selects the another card, it will become secondCard */        
+    secondCard = this;
+
+        /* has flipped will then go back to false */
+    hasFlippedCard = false;
+
+    /* player has now selected two cards.  Call a function to check if they are matched */
+    checkForMatch();
 }
 
+function checkForMatch(){
+    /* Check if the dataset-band from the memory card on firstCard and secondCard match */
+    if (firstCard.dataset.band === secondCard.dataset.band){
+        disableCards();
+        return;
+    }
+}
+
+    /* listens out for user to click a card and then calls flipCard function */
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
+    /* shuffle cards to create a rand list of cards, Start button calls this function and the game begins */
 function shuffleCards() {
     cards.forEach(card => {
         let randomOrder = Math.floor(Math.random() * 12);
