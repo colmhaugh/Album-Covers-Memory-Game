@@ -101,11 +101,18 @@ try 360 deg*/
     
     margin: auto;
     display: block;
+/*to hide the back of the card on top so that the card in the bottom can be shown*/
+    backface-visibility: hidden;
 }
 
 /*to add mirror to images to be correct when filpped*/
 .back-face{
     transform: scaleX(-1);
+}
+
+/*to add mirror to images to be correct when filpped*/
+.front-face{
+    transform: rotateY(180deg);
 }
 
 
