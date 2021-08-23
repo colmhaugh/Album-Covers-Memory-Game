@@ -12,3 +12,10 @@ function flipCard(){
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function shuffleCards() {
+    cards.forEach(card => {
+        let randomOrder = Math.floor(Math.random() * 12);
+        card.style.order = randomOrder;
+    });
+}
