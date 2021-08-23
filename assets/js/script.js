@@ -6,9 +6,22 @@
 
 const cards = document.querySelectorAll(".memory-card");
 
+let hasFlippedCard = false;
+let firstCard, secondCard;
+
 /*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
+
 function flipCard(){
-    this.classList.toggle('flip');
+    /* this.classList.toggle('flip'); */
+
+
+    this.classList.add('flip');
+/* click a card, if the card wasn't selected already then it will become the first card flipped */
+    if (!hasFlippedCard) {
+        hasFlippedCard = true;
+        firstCard = this;
+        return;
+    }
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
