@@ -33,10 +33,22 @@ function flipCard(){
 
 function checkForMatch(){
     /* Check if the dataset-band from the memory card on firstCard and secondCard match */
-    if (firstCard.dataset.band === secondCard.dataset.band){
+    if (firstCard.dataset.band === secondCard.dataset.band){        
+        /*if the cards match then leave the cards faced up and remove the click option */
         disableCards();
         return;
     }
+    /*if the cards don't match then flip the cards back over again */
+    unflipCards();
+}
+
+function disableCards(){
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+}
+
+function unflipCards(){
+
 }
 
     /* listens out for user to click a card and then calls flipCard function */
