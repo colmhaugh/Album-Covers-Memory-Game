@@ -89,3 +89,9 @@ function shuffleCards() {
         card.style.order = randomOrder;
     });
 }
+ /* Function to play sound when cards are matched */
+function playSound(){
+    var x = document.getElementById("myAudio");   
+    x.play(); 
+} 
+
