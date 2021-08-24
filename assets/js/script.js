@@ -5,13 +5,15 @@
  When  a card is clicked, it will call flipCard function */
 
 const cards = document.querySelectorAll(".memory-card");
+var noOfCards = 12;
+let userName;
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
 /* Pop up message */
 function userAlert() { 
-    let userName = prompt('Please enter your name', String);  
+    userName = prompt('Please enter your name', String);  
     alert(`
     Hi ${userName}, 
     Please read the instructions below and press OK when you are ready.
@@ -57,6 +59,11 @@ function checkForMatch(){
 
         /* Play clip from album */
         playSound();
+        noOfCards = noOfCards - 2;
+        if (noOfCards == 0){
+            alert(`CONGRATLATIONS ${userName},
+            You have a great memory`);
+        }
         return;
     }
     /*if the cards don't match then flip the cards back over again */
