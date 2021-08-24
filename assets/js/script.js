@@ -9,6 +9,24 @@ const cards = document.querySelectorAll(".memory-card");
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+/* Pop up message */
+function userAlert() { 
+    let userName = prompt('Please enter your name', String);  
+    alert(`
+    Hi ${userName}, 
+    Please read the instructions below and press OK when you are ready.
+        INSTURCTIONS
+    Object of the Game:
+    Find the pairs of matching cards.    
+    The cards are layed out face down.  
+    There are 6 pairs of album covers.  
+    Please turn over one card and then try to find a matching card.     `
+    ); 
+   
+}
+
+
+
 /*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
 
 function flipCard(){
