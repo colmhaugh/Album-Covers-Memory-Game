@@ -5,8 +5,10 @@
  When  a card is clicked, it will call flipCard function */
 
 const cards = document.querySelectorAll(".memory-card");
-var noOfCards = 12;
+var noOfCards;
+var noIncorrectCards;
 let userName;
+
 
 let hasFlippedCard = false;
 let firstCard, secondCard;
@@ -60,10 +62,17 @@ function checkForMatch(){
         /* Play clip from album */
         playSound();
         noOfCards = noOfCards - 2;
-        if (noOfCards == 0){
+        if (noOfCards === 0 && noIncorrectCards <= 3 ){
             alert(`CONGRATLATIONS ${userName},
-            You have a great memory`);
+            You have a great memory`);}
+            else if (noOfCards == 0 && noIncorrectCards <= 7 ){
+                alert(`CONGRATLATIONS ${userName},
+                Your memory is fine`);
         }
+        else if (noOfCards == 0 && noIncorrectCards < 15 ){
+            alert(`Hi ${userName},
+            Your memory is not great`);
+    }
         return;
     }
     /*if the cards don't match then flip the cards back over again */
@@ -74,6 +83,7 @@ function checkForMatch(){
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+    
 }
 
 /* Function called when the cards dont match.  We remove the flip class that was added when they were selected.  Cards flip back after half a second */
@@ -82,6 +92,8 @@ function unflipCards(){
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
     }, 500);
+   
+    noIncorrectCards++;
 
 }
 
@@ -91,10 +103,13 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
     /* shuffle cards to create a rand list of cards, Start button calls this function and the game begins */
 function shuffleCards() {
+    noOfCards = 12;
+    noIncorrectCards = 0;
     cards.forEach(card => {
         let randomOrder = Math.floor(Math.random() * 12);
         card.style.order = randomOrder;
     });
+
 }
  /* Function to play sound when cards are matched */
 function playSound(){
