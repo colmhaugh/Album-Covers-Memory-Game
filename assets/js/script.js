@@ -5,8 +5,8 @@
  When  a card is clicked, it will call flipCard function */
 
 const cards = document.querySelectorAll(".memory-card");
-var noOfCards;
-var noIncorrectCards;
+var noOfCards = 12;
+var noIncorrectCards = 0;
 let userName;
 
 
@@ -34,7 +34,8 @@ function userAlert() {
 /*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
 
 function flipCard(){
-    /* this.classList.toggle('flip'); */
+    
+    /* add flip to card thats selected; */
 
     this.classList.add('flip');
         /* click a card, if it is the first card turned it will become the first card flipped */
@@ -73,6 +74,7 @@ function checkForMatch(){
             alert(`Hi ${userName},
             Your memory is not great`);
     }
+       /*  reset(); */
         return;
     }
     /*if the cards don't match then flip the cards back over again */
@@ -116,4 +118,18 @@ function playSound(){
     var x = document.getElementById("myAudio");   
     x.play(); 
 } 
+
+function unflipAllCards(){
+    cards.forEach(card => {card.classList.remove('flip'); });    
+    hasFlippedCard = false;
+}
+
+function reset(){
+    noOfCards = 12;
+    noIncorrectCards = 0;
+    hasFlippedCard = false;
+    shuffleCards();
+    unflipAllCards();
+    
+}
 
