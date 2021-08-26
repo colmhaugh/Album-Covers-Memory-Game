@@ -50,16 +50,16 @@ function checkForMatch(){
         playSound();
         noOfCards = noOfCards - 2;     
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
-            document.getElementById("demo").innerHTML = "CONGRATLATIONS!  You have a great memory";
+            document.getElementById("endGameModalParagraph").innerHTML = "CONGRATLATIONS!  You have a great memory";
             endGame();}
             
 
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-            document.getElementById("demo").innerHTML = "Well Done, You have a fine memory";
+            document.getElementById("endGameModalParagraph").innerHTML = "Well Done, You have a fine memory";
             endGame();}
         
             else if (noOfCards == 0 && noIncorrectCards < 15 ){
-            document.getElementById("demo").innerHTML = "Your memory is not great";
+            document.getElementById("endGameModalParagraph").innerHTML = "Your memory is not great";
             endGame();}
        
         /* if (noOfCards === 0 && noIncorrectCards <= 3 ){
