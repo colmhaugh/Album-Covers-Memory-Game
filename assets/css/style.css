@@ -134,7 +134,7 @@ try 360 deg*/
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid yellow;
-    width: 90; 
+    width: 85%; 
     box-sizing: border-box;
   }
 
