@@ -27,23 +27,6 @@ h1 {
     width:auto;
 }
 
-.button{
-        background-color: #4CAF50;
-        border: 2px solid #dcacb2;
-        border-radius: 12px;
-        color: #fff;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;        
-        display: inline-block;
-        font-size: 150%;
-        margin: auto;
-        /* margin: 4px 2px; */
-        transition-duration: 0.4s;
-        cursor: pointer;        
- 
-}
-
 #div-button{
     text-align: center;
     width : auto;
@@ -151,9 +134,15 @@ try 360 deg*/
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid yellow;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 90; 
+    box-sizing: border-box;
   }
-  
+
+  /* .modal-content > h1 {
+      text-align: center;
+      width: fit-content;
+  }
+   */
   /* The Close Button */
   .close {
     color: #aaa;
@@ -196,19 +185,21 @@ try 360 deg*/
         width: calc(33.3333% - 2px);
         height: calc(25% - 2px);
         margin: 1px;
-        }
+        }   
         
     }
 
-   /*  @media screen and (max-width: 350px){ */
+    @media screen and (max-width: 600px){
   
-        /*change the ammount of cards in a row from 4 to 3*/
-        /* .memory-card{
-            width: 30%;
+           
+        .modal-content {
+          font-size: 75%;
+          
             }
-        
-            .memory-game{
-                width: 320px;
-            }
-        } */
-       
+            
+        }
+
+    
+
+
+   
