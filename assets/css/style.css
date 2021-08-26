@@ -28,6 +28,7 @@ body {
     padding: 2px 4px;
     text-align: center;
     display: inline-block;
+    font-weight: bold;
     font-size: 16px;
     margin: 2px 1px;
     cursor: pointer;
@@ -152,6 +153,14 @@ try 360 deg*/
     font-size: 28px;
     font-weight: bold;
   }
+
+  /* The Close Button */
+  .endClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
   
   .close:hover,
   .close:focus {
@@ -198,6 +207,10 @@ try 360 deg*/
           font-size: 75%;
           
             }
+
+        .button{
+            font-size: 12px;
+        }
             
         }
 

@@ -13,6 +13,10 @@ let hasFlippedCard = false;
 let firstCard, secondCard;
 let endText;
 
+// Get the modal
+var modal = document.getElementById("myModal");
+var endModal = document.getElementById("endModal");
+
 /*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
 
 function flipCard(){
@@ -44,8 +48,16 @@ function checkForMatch(){
 
         /* Play clip from album */
         playSound();
-        noOfCards = noOfCards - 2;        
+        noOfCards = noOfCards - 2;     
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
+            endGame()}
+            else if (noOfCards == 0 && noIncorrectCards <= 7 ){
+                endGame();
+        }
+        else if (noOfCards == 0 && noIncorrectCards < 15 ){
+            endGame();
+    }   
+        /* if (noOfCards === 0 && noIncorrectCards <= 3 ){
             alert(`CONGRATLATIONS ${userName},
             You have a great memory`);}
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
@@ -55,8 +67,8 @@ function checkForMatch(){
         else if (noOfCards == 0 && noIncorrectCards < 15 ){
             alert(`Hi ${userName},
             Your memory is not great`);
-    }
-       /*  reset(); */
+    } */
+        
         return;
     }
     /*if the cards don't match then flip the cards back over again */
@@ -116,11 +128,9 @@ function reset(){
 }
 
 
-// Get the modal
-var modal = document.getElementById("myModal");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var endSpan = document.getElementsByClassName("endClose")[0];
 
 // When the page loads, open the modal
 function userAlert() {
@@ -132,7 +142,6 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -140,6 +149,21 @@ window.onclick = function(event) {
   }
 }
 
+// When the user clicks on <span> (x), close the modal
+endSpan.onclick = function() {
+    endModal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == endModal) {
+        endModal.style.display = "none";
+    }
+  } 
+
+function endGame() {
+    endModal.style.display = "block";
+  }
 
 /* function endMessageText(){
     endText = "testi234";
