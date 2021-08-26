@@ -124,11 +124,11 @@ try 360 deg*/
 
 /* add mouse hover to cards*/
 
-div img:hover{
+/* div img:hover{
     animation-name: card-zoom;
     animation-duration: 1s;
     animation-fill-mode: forwards
-}
+} */
 
 /* The Modal (background) */
 .modal {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Album Cover Memory Game</title>
 </head>
-<BODY onLoad="userAlert()">
+<BODY onLoad="userAlert(), shuffleCards()">
 
     <!-- Added audio to be played when answer is correct-->
     <audio id="myAudio">
@@ -34,19 +34,7 @@
     </div>
   
   </div>
-
-  <div id="endModal" class="modal">
-
-    <!-- Modal content instead of alert -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-       <h1>Game Over</h1> <br>
-        <p id = "endParagraph"></p>
-  </div>
-</div>
-
-
-
+  
     <!--<div id = "div-button">
         <button class="button">Instructions</button>
     </div> -->

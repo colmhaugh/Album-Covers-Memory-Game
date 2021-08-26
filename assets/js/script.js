@@ -64,14 +64,8 @@ function checkForMatch(){
         /* Play clip from album */
         playSound();
         noOfCards = noOfCards - 2;
+        
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
-            endText = "CONGRATLATIONS. You have a great memory";}
-                else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-                    endText = "CONGRATLATIONS.Your memory is fine";            }
-            else if (noOfCards == 0 && noIncorrectCards < 15 ){
-                endText = "Your memory is not great";
-                endMessage();
-        /* if (noOfCards === 0 && noIncorrectCards <= 3 ){
             alert(`CONGRATLATIONS ${userName},
             You have a great memory`);}
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
@@ -80,7 +74,7 @@ function checkForMatch(){
         }
         else if (noOfCards == 0 && noIncorrectCards < 15 ){
             alert(`Hi ${userName},
-            Your memory is not great`); */
+            Your memory is not great`);
     }
        /*  reset(); */
         return;
@@ -144,7 +138,6 @@ function reset(){
 
 // Get the modal
 var modal = document.getElementById("myModal");
-var endModal = document.getElementById("endModal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -154,22 +147,11 @@ function userAlert() {
   modal.style.display = "block";
 }
 
-// When the game ends, open the endModal
-function endMessage() {
-    endModal.style.display = "block"
-    var x = document.getElementById("endParagraph");
-    x.innerHTML = `{$endText}`;
-    
-  }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-span.onclick = function() {
-    endModal.style.display = "none";
-  }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -178,9 +160,13 @@ window.onclick = function(event) {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == endModal) {
-      endModal.style.display = "none";
-    }
-  }
+
+function endMessageText(){
+    if (noOfCards === 0 && noIncorrectCards <= 3 ){
+        endText = "CONGRATLATIONS. You have a great memory";}
+            else if (noOfCards == 0 && noIncorrectCards <= 7 ){
+                endText = "CONGRATLATIONS.Your memory is fine";            }
+        else if (noOfCards == 0 && noIncorrectCards < 15 ){
+            endText = "Your memory is not great";
+        }
+    };
