@@ -20,9 +20,23 @@ body {
 
     }
 
+.button {
+    background-color: yellow;
+    border: 1px solid darkslategray;
+    border-radius: 12px;
+    color: black;
+    padding: 2px 4px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    
+    }
+
 h1 {
     
-    text-align:center;
+    text-align: center;
     letter-spacing: 4px; 
     width:auto;
 }
@@ -52,22 +66,10 @@ section{
     height: calc(33.333% - 4px);
     margin: 2px;
     position: relative;
-
     /*add 3d style flip*/
     transform-style: preserve-3d;
-    transition: .5s;
-    
-    /* float: left;
-    width: 24%;
-    height: auto;
-    margin: 2px;
-    position: relative; */
+    transition: .5s;   
 
-    /* padding: 5px; */
-    /* width: calc(25% - 10px); 
-    height: calc(33.333% - 10px);*/    
-    /* box-shadow: 1px 1px 1px 1px rgba(1, 0, 0, .3);
-    box-sizing: border-box;   */
 }
 
 /*adding style for flip class that gets created when card is clicked

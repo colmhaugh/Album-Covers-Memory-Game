@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Album Cover Memory Game</title>
 </head>
+<!-- Modal is called and cards are shuffeled when the page loads-->
 <BODY onLoad="userAlert(), shuffleCards()">
 
     <!-- Added audio to be played when answer is correct-->
@@ -18,7 +19,7 @@
         Your browser does not support the audio element.
       </audio>
 
-      <!-- The Modal is being used instead of alert and propmt -->
+      <!-- The Modal is being used instead of alert-->
 <div id="myModal" class="modal">
 
     <!-- Modal content  -->
@@ -35,7 +36,7 @@
   
   </div>  
    
-    <button onclick="reset()">Reset</button>
+    <button class = "button" onclick="reset()">Reset</button>
     <section class="memory-game">
         <div class = "memory-card" data-band="Guns">
             <img class = "front-face" src = "/assets/images/gnr.webp" alt = "Guns and Roses Appetite for Destruction">
