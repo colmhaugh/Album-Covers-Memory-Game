@@ -50,13 +50,18 @@ function checkForMatch(){
         playSound();
         noOfCards = noOfCards - 2;     
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
-            endGame()}
+            document.getElementById("demo").innerHTML = "CONGRATLATIONS!  You have a great memory";
+            endGame();}
+            
+
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-                endGame();
-        }
-        else if (noOfCards == 0 && noIncorrectCards < 15 ){
-            endGame();
-    }   
+            document.getElementById("demo").innerHTML = "Well Done, You have a fine memory";
+            endGame();}
+        
+            else if (noOfCards == 0 && noIncorrectCards < 15 ){
+            document.getElementById("demo").innerHTML = "Your memory is not great";
+            endGame();}
+       
         /* if (noOfCards === 0 && noIncorrectCards <= 3 ){
             alert(`CONGRATLATIONS ${userName},
             You have a great memory`);}
@@ -68,12 +73,12 @@ function checkForMatch(){
             alert(`Hi ${userName},
             Your memory is not great`);
     } */
-        
+           
         return;
-    }
+     }   
     /*if the cards don't match then flip the cards back over again */
     unflipCards();
-}
+    }
 
 /* Function called when the cards matched.  It removed the event listener so the cards can't be selected again */
 function disableCards(){
@@ -164,6 +169,8 @@ endSpan.onclick = function() {
 function endGame() {
     endModal.style.display = "block";
   }
+
+
 
 /* function endMessageText(){
     endText = "testi234";
