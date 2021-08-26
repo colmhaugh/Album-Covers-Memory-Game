@@ -7,11 +7,8 @@
 const cards = document.querySelectorAll(".memory-card");
 var noOfCards = 12;
 var noIncorrectCards = 0;
-let userName;
-
 let hasFlippedCard = false;
 let firstCard, secondCard;
-let endText;
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -60,20 +57,8 @@ function checkForMatch(){
         
             else if (noOfCards == 0 && noIncorrectCards < 15 ){
             document.getElementById("endGameModalParagraph").innerHTML = "Your memory is not great";
-            endGame();}
-       
-        /* if (noOfCards === 0 && noIncorrectCards <= 3 ){
-            alert(`CONGRATLATIONS ${userName},
-            You have a great memory`);}
-            else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-                alert(`CONGRATLATIONS ${userName},
-                Your memory is fine`);
-        }
-        else if (noOfCards == 0 && noIncorrectCards < 15 ){
-            alert(`Hi ${userName},
-            Your memory is not great`);
-    } */
-           
+            endGame();}      
+                  
         return;
      }   
     /*if the cards don't match then flip the cards back over again */
@@ -169,17 +154,3 @@ endSpan.onclick = function() {
 function endGame() {
     endModal.style.display = "block";
   }
-
-
-
-/* function endMessageText(){
-    endText = "testi234";
-    if (noOfCards === 0 && noIncorrectCards <= 3 ){
-        endText = "CONGRATLATIONS. You have a great memory";}
-            else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-                endText = "CONGRATLATIONS.Your memory is fine";            }
-        else if (noOfCards == 0 && noIncorrectCards < 15 ){
-            endText = "Your memory is not great";
-        }
-        return endText;
-    } */

@@ -39,10 +39,10 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 
   - [HTML5](https://en.wikipedia.org/wiki/HTML5)
   - [CSS](https://en.wikipedia.org/wiki/CSS)
+  - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Libraries & Programs Used
 
-  - Hover.css was used on the nav bar list items, the contact and menu links in the food and drinks page.  It was use in the food and drinks page over the images of the hotels to make them zoom to indicate that they are interactive.
   - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
   - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
   - GitHub is used to store the projects code after being pushed from Git.
@@ -76,6 +76,14 @@ Issues were fixed as they appeared.
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+
+- JavaScript
+  - Noerrors were found when passing through the official Jshint validator
+    - The following metrics were returned:
+      - There are 19 functions in this file.
+      - Function with the largest signature takes 1 arguments, while the median is 0.
+      - Largest function has 13 statements in it, while the median is 2.
+      - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ### Unfixed Bugs
 
