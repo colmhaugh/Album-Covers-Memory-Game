@@ -9,28 +9,9 @@ var noOfCards = 12;
 var noIncorrectCards = 0;
 let userName;
 
-
 let hasFlippedCard = false;
 let firstCard, secondCard;
 let endText;
-
-/* Pop up message */
-/* function userAlert() { 
-    userName = prompt('Please enter your name', String);  
-    alert(`
-    Hi ${userName}, 
-    Please read the instructions below and press OK when you are ready.
-        INSTURCTIONS
-    Object of the Game:
-    Find the pairs of matching cards.    
-    The cards are layed out face down.  
-    There are 6 pairs of album covers.  
-    Please turn over one card and then try to find a matching card.     `
-    ); 
-   
-} */
-
-
 
 /*Using toggle to add flip class to memory card that was selected and removing it if it is present*/
 
@@ -63,8 +44,7 @@ function checkForMatch(){
 
         /* Play clip from album */
         playSound();
-        noOfCards = noOfCards - 2;
-        
+        noOfCards = noOfCards - 2;        
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
             alert(`CONGRATLATIONS ${userName},
             You have a great memory`);}
@@ -106,7 +86,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 
     /* shuffle cards to create a rand list of cards, Start button calls this function and the game begins */
-function shuffleCards() {
+function shuffleCards() {    
     noOfCards = 12;
     noIncorrectCards = 0;
     cards.forEach(card => {
@@ -127,9 +107,9 @@ function unflipAllCards(){
 }
 
 function reset(){
+    cards.forEach(card => card.addEventListener('click', flipCard));
     noOfCards = 12;
     noIncorrectCards = 0;
-    hasFlippedCard = false;
     shuffleCards();
     unflipAllCards();
     
@@ -161,7 +141,8 @@ window.onclick = function(event) {
 }
 
 
-function endMessageText(){
+/* function endMessageText(){
+    endText = "testi234";
     if (noOfCards === 0 && noIncorrectCards <= 3 ){
         endText = "CONGRATLATIONS. You have a great memory";}
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
@@ -169,4 +150,5 @@ function endMessageText(){
         else if (noOfCards == 0 && noIncorrectCards < 15 ){
             endText = "Your memory is not great";
         }
-    };
+        return endText;
+    } */
