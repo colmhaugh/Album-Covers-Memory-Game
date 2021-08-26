@@ -87,8 +87,7 @@ try 360 deg*/
     padding : 5px;
     position: absolute;
     border-radius: 5px;
-    background: yellow;
-    
+    background: yellow;    
     margin: auto;
     display: block;
 /*to hide the back of the card on top so that the card in the bottom can be shown*/
@@ -105,17 +104,6 @@ try 360 deg*/
     transform: rotateY(180deg);
 }
 
-
-
-
-/* add mouse hover to cards*/
-
-/* div img:hover{
-    animation-name: card-zoom;
-    animation-duration: 1s;
-    animation-fill-mode: forwards
-} */
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -123,16 +111,16 @@ try 360 deg*/
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100%; 
+    height: 100%; 
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content/Box */
+  /* Modal Content */
   .modal-content {
-      text-align: center;
+    text-align: center;
     background-color: darkslategray;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -164,11 +152,6 @@ try 360 deg*/
     cursor: pointer;
   }
 
-
-
-
-
-
 /* creates the level of zoom for cards */
 
 @keyframes card-zoom {
@@ -181,7 +164,7 @@ try 360 deg*/
     
 }
 
-/* For medium to smaller screen size from 1200px wide*/
+/* For medium to smaller screen size from 950px wide*/
 
 
 @media screen and (max-width: 950px){
@@ -205,7 +188,7 @@ try 360 deg*/
 
         .button{
             font-size: 12px;
-        }
+            }
             
         }
 
