@@ -49,15 +49,15 @@ function checkForMatch(){
         playSound();
         noOfCards = noOfCards - 2;     
         if (noOfCards === 0 && noIncorrectCards <= 3 ){
-            document.getElementById("endGameModalParagraph").innerHTML = "CONGRATLATIONS!  You have a great memory";
+            document.getElementById("endGameModalParagraph").innerHTML = "CONGRATLATIONS!  You have a great memory.  Press Reset button to play again";
             endGame();}            
 
             else if (noOfCards == 0 && noIncorrectCards <= 7 ){
-            document.getElementById("endGameModalParagraph").innerHTML = "Well Done, You have a fine memory";
+            document.getElementById("endGameModalParagraph").innerHTML = "Well Done, You have a fine memory. Press Reset button to see if you can do better";
             endGame();}
         
             else if (noOfCards == 0 && noIncorrectCards < 15 ){
-            document.getElementById("endGameModalParagraph").innerHTML = "Your memory is not great";
+            document.getElementById("endGameModalParagraph").innerHTML = "Your memory is not great.  Don't forget to press Reset button to try again";
             endGame();}      
                   
         return;
