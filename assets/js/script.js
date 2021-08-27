@@ -10,6 +10,9 @@ var noIncorrectCards = 0;
 let hasFlippedCard = false;
 let firstCard, secondCard;
 
+// from freecodecamp to lock board to stop user from clicking more than 2 cards
+let lockBoard = false;
+
 // Get the modal
 var modal = document.getElementById("myModal");
 var endModal = document.getElementById("endModal");
@@ -18,6 +21,8 @@ var endModal = document.getElementById("endModal");
 
 function flipCard(){
     
+if(lockBoard) return;
+
     // add flip to card thats selected;
 
     this.classList.add('flip');
