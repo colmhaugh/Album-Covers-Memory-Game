@@ -20,6 +20,7 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 - __Memory Game__
 
   - In this section there are 12 divs.  Each div has 2 images to represent a card.  There are an image of a music note at the front of the card and at the back of the card there is an image of the album cover.  I have used data- value to link the pairs of cards.
+  - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.  
   - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.
 
 ![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/MemoryGameCards.JPG)
@@ -29,9 +30,9 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 
   - When the game is over, the End Game Modal appears with a message for the player.  The player can get 3 different messages depending on how many guesses they have used.
 
-  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal2.JPG)
+  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal1.JPG)
    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal2.JPG)
-    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal2.JPG)
+    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal3.JPG)
 
 ### Features Left to Implement
 
@@ -48,7 +49,6 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 
 ### Libraries & Programs Used
 
-  - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
   - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
   - GitHub is used to store the projects code after being pushed from Git.
 
@@ -56,18 +56,17 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 ## Testing 
 
 I uesed the devices in devtools to check how it would look on samller devices after every push as part of my regression testing.
-I published early so I could test on mobile phone every eveining after a push.
 I tested my mobile device, Samsung 20 ultra and on iPad.
 Most of the early testing was done using Google Developent tools.
-Issues were fixed as they appeared.
+Issues were fixed as they appeared and i put detailed commit comments when they were fixed.
 
 # Issues fixed
 
-- I had in issue where the images for the hotels in the food and drink page.  The image was showing up while I was testing but not when I was testing on the live site.  I used google develpoer tools to inspect and discovered that i had added an extra dot so it was looking for the image in the wrong location.  It was img src="../assets/images/  and once i changed it to img src="./assets/images/ it worked.
-- While testing on smaller devices, the ""Welcome to Spanish Point" overlay text didnt look good on smaller devices.  I made the hero-text display to none so it wouldnt appear on phones.  
-- I also made the hero-text higher on tablets so it would look better.
-- There was not enough room on small devices for the 3 hotels to appear in a row so i put them in a column.
-- Some images were loading slowly so i lowered the quality of the image.
+- I fixed most issues as I found them.  I used the commit comment to note when the issues were fixed.
+- I got error 404 message when I tried to deploy the page.  I had to add a favicon and relevant text to the head for this to work.
+- Image for Guns N Roses card were not displaying when deployed.  I removed the / from the begining of the source and it worked.
+- Cards were flickering so I removed onhoover.
+- Changed the Alert for the isntructions and Game over to a Modal for a better user experience.
 - Copied the text to word doc and preformed a spell check to catch any errors.
 
 # Further testing
@@ -113,19 +112,21 @@ To be added!
   - Press Enter. Your local clone will be created.
 
 ## Credits 
- 
-- Game is based on [FreeCodeCame] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
+
 - Advice and guidance from my mentor Precious Ijege.
 - Great leadership and guidance from Kasia Bogucka.
-- Great links and advice from colleagues in my course.
+- Great links and advice from colleagues in my course. 
+- Game is based on [FreeCodeCame] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
+- Additional flexbox information from [css-tricks] (https://www.css-tricks.com)
 - Refresh html and css from Code Institute lessons and from [w3school] (https://www.w3schools.com/)
-- MEmory game based on  [css-tricks] (https://www.css-tricks.com)
 - Modal from [w3school] (https://www.w3schools.com/)
-- Text for end game modal from [w3school] (https://www.w3schools.com/)
+- Different valuse for the text for end game modal from [w3school] (https://www.w3schools.com/)
+- Converted note image to favicon using [favicon] (https://favicon.io/favicon-converter/)
+
 
 ### Content 
 
-- Photos for album were from their Wiki page.
+- Modal text for insturcions and end game were created by Colm Haugh.
 
 
 ### Media
