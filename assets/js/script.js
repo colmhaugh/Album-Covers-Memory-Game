@@ -23,6 +23,7 @@ function flipCard(){
     
 if(lockBoard) return;
 
+if (this === firstCard) return;
     // add flip to card thats selected;
 
     this.classList.add('flip');
@@ -37,7 +38,7 @@ if(lockBoard) return;
     secondCard = this;
 
         // has flipped will then go back to false
-    hasFlippedCard = false;
+    // hasFlippedCard = false;
 
     // player has now selected two cards.  Call a function to check if they are matched
     checkForMatch();
@@ -77,6 +78,7 @@ function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     
+    resetBoard();
 }
 
 /* Function called when the cards dont match.  We remove the flip class that was added when they were selected.  
@@ -85,6 +87,7 @@ function unflipCards(){
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+        resetBoard();
     }, 500);
    
     noIncorrectCards++;
@@ -93,6 +96,13 @@ function unflipCards(){
 
 // istens out for user to click a card and then calls flipCard function
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+// Code from freecodecamp 
+
+function resetBoard(){
+    [hasFlippedCard, lockBoard] = [false, false];
+    [firstCard, secondCard] = [null, null];
+}
 
 
 // shuffle cards to create a rand list of cards, Start button calls this function and the game begins */
@@ -110,12 +120,13 @@ function playSound(){
     var x = document.getElementById("myAudio");   
     x.play(); 
 } 
-
+// Function to remove the class so the cards flip back
 function unflipAllCards(){
     cards.forEach(card => {card.classList.remove('flip'); });    
     hasFlippedCard = false;
 }
 
+// Called by the reset button, this will reset the game.
 function reset(){
     cards.forEach(card => card.addEventListener('click', flipCard));
     noOfCards = 12;
@@ -158,7 +169,7 @@ endSpan.onclick = function() {
         endModal.style.display = "none";
     }
   } 
-
+ // This will display the Game Over modal
 function endGame() {
     endModal.style.display = "block";
   }
