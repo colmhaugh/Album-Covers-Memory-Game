@@ -21,7 +21,7 @@ var endModal = document.getElementById("endModal");
 
 function flipCard(){
     
-if(lockBoard) return;
+if (lockBoard) return;
 
 if (this === firstCard) return;
     // add flip to card thats selected;
@@ -84,17 +84,22 @@ function disableCards(){
 /* Function called when the cards dont match.  We remove the flip class that was added when they were selected.  
 Cards flip back after half a second */
 function unflipCards(){
+
+    lockBoard = true;
+
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
+
         resetBoard();
+        
     }, 500);
    
     noIncorrectCards++;
 
 }
 
-// istens out for user to click a card and then calls flipCard function
+// listens out for user to click a card and then calls flipCard function
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 // Code from freecodecamp 

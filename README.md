@@ -12,7 +12,7 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 
 - __Instructions Modal__
 
-  - Appears when the page load.  The Alert() style was boring so I created a modal with the instructions on how to play the game.
+  - Appears when the page loads.  The Alert() style was boring so I created a modal with the instructions on how to play the game.
   - The Modal will dissapear when the user clicks the x button or when the click outside the window. 
 
 ![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/InstructionsModal.JPG)
@@ -125,10 +125,10 @@ Family and friends tested on their devices and provided feedback.
 
 ## Credits 
 
-- Advice and guidance from my mentor Precious Ijege.
+- Great advice and guidance from my mentor Precious Ijege.
 - Great leadership and guidance from Kasia Bogucka.
 - Great links and advice from colleagues in my course. 
-- Game is based on [FreeCodeCamp](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+- Game is based on a game on [FreeCodeCamp](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 - Additional flexbox information from [css-tricks](https://www.css-tricks.com)
 - Refresh html and css from Code Institute lessons and from [w3school](https://www.w3schools.com)
 - Modal from [w3school](https://www.w3schools.com)
