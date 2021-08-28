@@ -80,6 +80,7 @@ Family and friends tested on their devices and provided feedback.
 - Changed the Alert for the instructions and Game over to a Modal for a better user experience.
 - Added function from Free Code Camp to fix when user double clicks a card.
 - Copied the text to word doc and preformed a spell check to catch any errors.
+- Button height was 100vh, which it inherited from the body.  For smaller screens I changed this to 100% so the button will go the length of the game cards.
 
 # Further testing
 - The Game was tested on multiple browsers including Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
