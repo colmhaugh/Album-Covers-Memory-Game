@@ -4,7 +4,7 @@
 
 Album covers memory game is a fun and simple memory card flipping game.  The object of the game is to filp over the cards and match the classic rock album covers.
 
-![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/AmIResponsive.JPG)
+![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/AmIResponsive.JPG)
 
 ## Features 
 
@@ -34,6 +34,16 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/EndGameModal2.JPG)
     ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/EndGameModal3.JPG)
 
+- __Reset Button__
+
+  -  Originally there as a place holder for the reset function, I liked the look of it, styled it and kept it there. 
+
+  ![Reset Button](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/ResetButton.JPG)
+
+- __Audio__
+
+  -  Sound clip when the user gets a matching pair. 
+
 ### Features Left to Implement
 
 - Additional levels can be added to the game.
@@ -59,6 +69,7 @@ I uesed the devices in devtools to check how it would look on samller devices af
 I tested my mobile device, Samsung 20 ultra and on iPad.
 Most of the early testing was done using Google Developent tools.
 Issues were fixed as they appeared and i put detailed commit comments when they were fixed.
+Family and friends tested on their devices and provided feedback.
 
 # Issues fixed
 
@@ -71,8 +82,8 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 - Copied the text to word doc and preformed a spell check to catch any errors.
 
 # Further testing
-- The Website was tested on multiple browsers including Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, Samsung S20 Ultra, iPhone 11 & iPad.
+- The Game was tested on multiple browsers including Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+- The Game was viewed on a variety of devices such as Desktop, Laptop, Samsung S20 Ultra, iPhone 11 & iPad.
 
 
 ### Validator Testing 
@@ -104,8 +115,8 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 ## Making a Local Clone
 
   - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - On the top of the page there is a green button "Code".
-  - Press the button and To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+  - On the top of the page there is a button "Code".
+  - Press the button and clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
   - Open Git Bash
   - Change the current working directory to the location where you want the cloned directory to be made.
   - Type git clone, and then paste the URL you copied in Step 3.
