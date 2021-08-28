@@ -4,7 +4,7 @@
 
 Album covers memory game is a fun and simple memory card flipping game.  The object of the game is to filp over the cards and match the classic rock album covers.
 
-![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/AmIResponsive.JPG)
+![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/AmIResponsive.JPG)
 
 ## Features 
 
@@ -15,7 +15,7 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
   - Appears when the page load.  The Alert() style was boring so I created a modal with the instructions on how to play the game.
   - The Modal will dissapear when the user clicks the x button or when the click outside the window. 
 
-![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/InstructionsModal.JPG)
+![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/InstructionsModal.JPG)
 
 - __Memory Game__
 
@@ -23,16 +23,16 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
   - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.  
   - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.
 
-![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/MemoryGameCards.JPG)
-![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/MemoryGameCardsAlbums.JPG)
+![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/MemoryGameCards.JPG)
+![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/MemoryGameCardsAlbums.JPG)
 
 - __End Game Modal__
 
   - When the game is over, the End Game Modal appears with a message for the player.  The player can get 3 different messages depending on how many guesses they have used.
 
-  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal1.JPG)
-   ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal2.JPG)
-    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/EndGameModal3.JPG)
+  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal1.JPG)
+   ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal2.JPG)
+    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal3.JPG)
 
 ### Features Left to Implement
 
@@ -91,7 +91,6 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 
 ### Unfixed Bugs
 
-To be added!
 
 ## Deployment
 
