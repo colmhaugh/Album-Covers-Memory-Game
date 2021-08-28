@@ -20,8 +20,8 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
 - __Memory Game__
 
   - In this section there are 12 divs.  Each div has 2 images to represent a card.  There are an image of a music note at the front of the card and at the back of the card there is an image of the album cover.  I have used data- value to link the pairs of cards.
-  - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.  
-  - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.
+  - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip back over.  
+  - When the game is over another modal will appear with text depending on the ammount of incorrect guesses.
 
 ![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/MemoryGameCards.JPG)
 ![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/MemoryGameCardsAlbums.JPG)
@@ -127,12 +127,12 @@ Family and friends tested on their devices and provided feedback.
 - Advice and guidance from my mentor Precious Ijege.
 - Great leadership and guidance from Kasia Bogucka.
 - Great links and advice from colleagues in my course. 
-- Game is based on [FreeCodeCamp] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
+- Game is based on [FreeCodeCamp] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
 - Additional flexbox information from [css-tricks] (https://www.css-tricks.com)
-- Refresh html and css from Code Institute lessons and from [w3school] (https://www.w3schools.com/)
-- Modal from [w3school] (https://www.w3schools.com/)
-- Different valuse for the text for end game modal from [w3school] (https://www.w3schools.com/)
-- Converted note image to favicon using [favicon] (https://favicon.io/favicon-converter/)
+- Refresh html and css from Code Institute lessons and from [w3school] (https://www.w3schools.com)
+- Modal from [w3school] (https://www.w3schools.com)
+- Different valuse for the text for end game modal from [w3school] (https://www.w3schools.com)
+- Converted note image to favicon using [favicon] (https://favicon.io/favicon-converter)
 
 
 ### Content 
