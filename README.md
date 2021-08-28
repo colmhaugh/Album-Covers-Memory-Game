@@ -143,5 +143,5 @@ Family and friends tested on their devices and provided feedback.
 ### Media
 
 - Photos for album were from their Wiki page.
-- Sound effect for correct answer is from [mixkit] (https://mixkit.co/free-sound-effects/)
+- Sound effect for correct answer is from [mixkit](https://mixkit.co/free-sound-effects/)
 
