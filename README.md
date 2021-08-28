@@ -4,7 +4,7 @@
 
 Album covers memory game is a fun and simple memory card flipping game.  The object of the game is to filp over the cards and match the classic rock album covers.
 
-![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/main/assets/images/redameimages/AmIResponsive.JPG)
+![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/AmIResponsive.JPG)
 
 ## Features 
 
@@ -15,7 +15,7 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
   - Appears when the page load.  The Alert() style was boring so I created a modal with the instructions on how to play the game.
   - The Modal will dissapear when the user clicks the x button or when the click outside the window. 
 
-![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/main/assets/images/readmeimages/InstructionsModal.JPG)
+![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/InstructionsModal.JPG)
 
 - __Memory Game__
 
