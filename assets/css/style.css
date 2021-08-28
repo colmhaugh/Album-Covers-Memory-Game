@@ -200,7 +200,13 @@ try 360 deg*/
             }
             
         }
-
+        @media screen and (max-height: 650px){
+           
+            body {
+                height: 100%;
+            }            
+                
+            }
     
 
 
