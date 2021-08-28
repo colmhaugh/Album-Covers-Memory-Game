@@ -127,12 +127,12 @@ Family and friends tested on their devices and provided feedback.
 - Advice and guidance from my mentor Precious Ijege.
 - Great leadership and guidance from Kasia Bogucka.
 - Great links and advice from colleagues in my course. 
-- Game is based on [FreeCodeCamp] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
-- Additional flexbox information from [css-tricks] (https://www.css-tricks.com)
-- Refresh html and css from Code Institute lessons and from [w3school] (https://www.w3schools.com)
-- Modal from [w3school] (https://www.w3schools.com)
-- Different valuse for the text for end game modal from [w3school] (https://www.w3schools.com)
-- Converted note image to favicon using [favicon] (https://favicon.io/favicon-converter)
+- Game is based on [FreeCodeCamp](https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae)
+- Additional flexbox information from [css-tricks](https://www.css-tricks.com)
+- Refresh html and css from Code Institute lessons and from [w3school](https://www.w3schools.com)
+- Modal from [w3school](https://www.w3schools.com)
+- Different valuse for the text for end game modal from [w3school](https://www.w3schools.com)
+- Converted note image to favicon using [favicon](https://favicon.io/favicon-converter)
 
 
 ### Content 
