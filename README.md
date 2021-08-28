@@ -4,7 +4,7 @@
 
 Album covers memory game is a fun and simple memory card flipping game.  The object of the game is to filp over the cards and match the classic rock album covers.
 
-![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/AmIResponsive.JPG)
+![Responsice Mockup](https://github.com/colmhaugh/Album-Covers-Memory-Game/main/assets/images/redameimages/AmIResponsive.JPG)
 
 ## Features 
 
@@ -15,7 +15,7 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
   - Appears when the page load.  The Alert() style was boring so I created a modal with the instructions on how to play the game.
   - The Modal will dissapear when the user clicks the x button or when the click outside the window. 
 
-![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/InstructionsModal.JPG)
+![Instructions Modal](https://github.com/colmhaugh/Album-Covers-Memory-Game/main/assets/images/readmeimages/InstructionsModal.JPG)
 
 - __Memory Game__
 
@@ -23,16 +23,16 @@ Album covers memory game is a fun and simple memory card flipping game.  The obj
   - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.  
   - The player selects a card, then tries to select the matching pair.  If the user is corret the cards will stay faced up.  If they don't match, the cards will flip cack over.
 
-![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/MemoryGameCards.JPG)
-![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/MemoryGameCardsAlbums.JPG)
+![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/MemoryGameCards.JPG)
+![Memory Game Cards down](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/MemoryGameCardsAlbums.JPG)
 
 - __End Game Modal__
 
   - When the game is over, the End Game Modal appears with a message for the player.  The player can get 3 different messages depending on how many guesses they have used.
 
-  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal1.JPG)
-   ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal2.JPG)
-    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/redameimages/EndGameModal3.JPG)
+  ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/EndGameModal1.JPG)
+   ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/EndGameModal2.JPG)
+    ![End Modal1](https://github.com/colmhaugh/Album-Covers-Memory-Game/blob/main/assets/images/readmeimages/EndGameModal3.JPG)
 
 ### Features Left to Implement
 
@@ -66,7 +66,8 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 - I got error 404 message when I tried to deploy the page.  I had to add a favicon and relevant text to the head for this to work.
 - Image for Guns N Roses card were not displaying when deployed.  I removed the / from the begining of the source and it worked.
 - Cards were flickering so I removed onhoover.
-- Changed the Alert for the isntructions and Game over to a Modal for a better user experience.
+- Changed the Alert for the instructions and Game over to a Modal for a better user experience.
+- Added function from Free Code Camp to fix when user double clicks a card.
 - Copied the text to word doc and preformed a spell check to catch any errors.
 
 # Further testing
@@ -84,7 +85,7 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 - JavaScript
   - Noerrors were found when passing through the official Jshint validator
     - The following metrics were returned:
-      - There are 19 functions in this file.
+      - There are 20 functions in this file.
       - Function with the largest signature takes 1 arguments, while the median is 0.
       - Largest function has 13 statements in it, while the median is 2.
       - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
@@ -115,7 +116,7 @@ Issues were fixed as they appeared and i put detailed commit comments when they 
 - Advice and guidance from my mentor Precious Ijege.
 - Great leadership and guidance from Kasia Bogucka.
 - Great links and advice from colleagues in my course. 
-- Game is based on [FreeCodeCame] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
+- Game is based on [FreeCodeCamp] (https://www.freecodecamp.org/news/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae/)
 - Additional flexbox information from [css-tricks] (https://www.css-tricks.com)
 - Refresh html and css from Code Institute lessons and from [w3school] (https://www.w3schools.com/)
 - Modal from [w3school] (https://www.w3schools.com/)
